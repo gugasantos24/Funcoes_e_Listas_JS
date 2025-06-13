@@ -1,44 +1,50 @@
 //1.
 function bemVindo(){
-    alert('Olá, mundo!');
+    console.log('Olá, mundo!');
 }
+
+bemVindo();
+
 
 //2.
-function recebeNome(){
-    let nome = prompt('Diga sem nome');
-    alert(`Olá, ${nome}`);
+function recebeNome(nome){
+    console.log(`Olá, ${nome}`);
 }
+
+recebeNome('Gustavo');
+
 
 //3.
-function recebeNumero(){
-    let dobro = numero * 2;
-    let numero = prompt('Diga um numero');
-    alert(`o dobro do número que você digitou é ${dobro}`);
+function recebeNumero(numero){
+    return numero * 2;
 }
+
+let dobro = recebeNumero(2)
+console.log(dobro);
+
 
 //4.
-function exibeMedia(){
-    let media = (n1 + n2 + n3) / 3;
-    let n1 = prompt('Diga o primeiro número');
-    let n2 = prompt('Diga o segundo número');
-    let n3 = prompt('Diga o terceiro número');
-    alert(`A media dos número fornecidos é ${media}`);
+function exibeMedia(a, b, c){
+    return (a + b + c) / 3;
 }
+
+let media = exibeMedia(3, 7, 9);
+console.log(media);
+
 
 //5.
-function exibeMaior(){
-    let numero1 = prompt('Diga um número');
-    let numero2 = prompt('Diga um segundo número');
-} if (numero1 > numero2){
-    alert(`o número ${numero1} é maior`);
-} else {
-    alert(`O número${numero2} é maior`);
+function exibeMaior(a, b){
+    return a > b ? a : b;
 }
 
+let numeroMaior = exibeMaior(6, 19);
+console.log(numeroMaior);
+
+
 //6.
-function exibeVezes(){
-    let multi = numero * numero;
-    let numero = prompt('Diga um número');
-    alert(`o Numero vezes ele mesmo é ${multi}`);
+function exibeVezes(numero){
+    return numero * numero;
 }
-    
+
+let multi = exibeVezes(5);
+console.log(multi);
